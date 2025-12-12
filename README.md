@@ -1,3 +1,11 @@
-```npm i```
-```npx bare-pack --target ios --target android --linked --out worklet.bundle.js worklet.js```
-```npm run ios```
+```bash
+npm i
+```
+
+```bash
+npx bare-pack --target ios --target android --linked --out worklet.bundle.js worklet.js
+```
+
+```bash
+npm run ios
+```
