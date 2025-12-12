@@ -1,4 +1,7 @@
 const Pipe = require('bare-pipe')
+const { SystemLog } = require('bare-logger')
+const Console = require('bare-console')
+global.console = new Console(new SystemLog())
 
 console.log('nested worklet logs')
 
