@@ -9,3 +9,5 @@ npx bare-pack --target ios --target android --linked --out worklet.bundle.js wor
 ```bash
 npm run ios
 ```
+
+then click "Run Worklet" in the app
