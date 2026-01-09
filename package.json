@@ -16,7 +16,7 @@
     "bare-pipe": "^4.1.0",
     "bare-rpc": "^1.0.0",
     "bare-system-logger": "^1.0.2",
-    "bare-worker": "^4.1.1",
+    "bare-worker": "^4.1.0",
     "expo": "~54.0.29",
     "expo-status-bar": "~3.0.9",
     "graceful-goodbye": "^1.3.3",
