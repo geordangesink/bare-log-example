@@ -1,3 +1,2 @@
-// /* global Bare, BareKit */
-const Worker = require('bare-worker')
-new Worker(require.resolve('./nested.js'))
+const getPort = require('./getPort.js')
+getPort(require.resolve('./nested.js'))
