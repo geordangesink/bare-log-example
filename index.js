@@ -3,11 +3,16 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Button } from 'react-native';
 import { Worklet } from 'react-native-bare-kit';
 import bundle from './worklet.bundle.js'
+import wrapper from './wrapper.bundle.js'
 
 export default function App() {
   const startWorklet = () => {
-    const worklet = new Worklet()
-    worklet.start('/worklet.bundle',bundle)
+    const filename = '/worklet.bundle'
+    const source = bundle
+
+    const worker = new Worklet()
+    const args = [filename, source]
+    worker.start('/wrapper.bundle', wrapper, args)
   }
 
   return (

@@ -4,24 +4,33 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "pack": "npx bare-pack --target ios --target android --linked --out worklet.bundle.js worklet.js && npx bare-pack --target ios --target android --linked --out wrapper.bundle.js wrapper.js",
     "start": "expo start",
     "android": "expo run:android",
     "ios": "expo run:ios",
+    "dev:ios": "npm run pack && npm run ios",
     "web": "expo start --web"
   },
   "dependencies": {
     "b4a": "^1.7.3",
     "bare-console": "^6.0.1",
+    "bare-crypto": "^1.13.0",
+    "bare-fs": "^4.5.3",
     "bare-logger": "^1.2.1",
+    "bare-module": "^6.1.3",
+    "bare-module-resolve": "^1.12.1",
+    "bare-path": "^3.0.0",
     "bare-pipe": "^4.1.0",
     "bare-rpc": "^1.0.0",
     "bare-system-logger": "^1.0.2",
+    "bare-thread": "^1.1.6",
+    "bare-url": "^2.3.2",
     "expo": "~54.0.32",
     "expo-status-bar": "~3.0.9",
     "graceful-goodbye": "^1.3.3",
     "react": "19.1.0",
     "react-native": "0.81.5",
-    "react-native-bare-kit": "^0.11.5"
+    "react-native-bare-kit": "^0.12.0"
   },
   "devDependencies": {
     "bare-pack": "^1.5.1"

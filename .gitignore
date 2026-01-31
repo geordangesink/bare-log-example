@@ -2,6 +2,7 @@
 
 # bundles
 worklet.bundle.js
+wrapper.bundle.js
 
 # dependencies
 node_modules/
